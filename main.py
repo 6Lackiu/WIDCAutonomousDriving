@@ -19,7 +19,6 @@ if __name__ == '__main__':
         print("启动任务")
         ADCPlatform.start_task()
         # 启动算法接入任务控制车辆
-        # control.run()
 
         # 选择任务的序号
         task_num = 4
