@@ -37,7 +37,6 @@ def latitudeyrControlpos(yr, yrPid):
 
 def latitudeControlpos(positionnow, latPid, MyCar, k=0.6):
     latPid.update(positionnow)
-    # print("position_now: ", positionnow)  #
     latPid.steer_ = latPid.output * -0.8  # -0.8
     if MyCar.speed > 70:
         latPid.steer_ = latPid.output * -k        # -0.7?  0.6
