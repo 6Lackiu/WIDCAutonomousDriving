@@ -50,7 +50,6 @@ def latitudeControlpos(positionnow, latPid, MyCar, k=0.6):
 def lontitudeControlSpeed(speed, lonPid):
     lonPid.update(speed - 5.0)
     if lonPid.output > speedPidThread_1:  # 加速阶段
-        # print('spezd is:', speed, 'output is:', lonPid.output, 'stage 1')
         lonPid.thorro_ = 1
         lonPid.brake_ = 0
     elif lonPid.output > speedPidThread_2:  # 稳定控速阶段
