@@ -23,7 +23,7 @@ def latitudeControlpos(positionnow, latPid):
 
 
 def lontitudeControlSpeed(speed, lonPid):
-    lonPid.update(speed - 16.0)      # ori: -5 -16
+    lonPid.update(speed - 16.0)
     if (lonPid.output > speedPidThread_1):  # 加速阶段
 
         # print("==============================================")
